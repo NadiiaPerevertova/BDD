@@ -27,6 +27,7 @@ public class DeliverLocationPageSteps {
     public void selectDeliverCountry(String countryName) {
         DeliverLocationPage deliver = new DeliverLocationPage();
         String deliveryPlace = deliver
+                .countryDropDown()
                 .selectDeliverCountry(countryName)
                 .done()
                 .getDeliverLocation(countryName);

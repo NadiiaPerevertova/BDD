@@ -15,6 +15,7 @@ public class DeliverLocationPage {
 
     public DeliverLocationPage apply() {
         SelenideElement buttonApply = $(By.id("GLUXZipUpdate")).shouldBe(Condition.visible);
+        buttonApply.hover();
         buttonApply.click();
         return this;
     }
