@@ -1,1 +1,1 @@
-# BDD
+# EPAM Web Driver practice BDD
