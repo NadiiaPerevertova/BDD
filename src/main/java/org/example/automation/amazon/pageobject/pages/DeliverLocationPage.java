@@ -7,8 +7,11 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class DeliverLocationPage {
+
+    private final By zipUpdateInput = By.id("GLUXZipUpdateInput");
+
     public DeliverLocationPage enterZipCode(String zipCode) {
-        SelenideElement fieldUsZipCode = $(By.id("GLUXZipUpdateInput")).shouldBe(Condition.visible);
+        SelenideElement fieldUsZipCode = $(zipUpdateInput).shouldBe(Condition.visible);
         fieldUsZipCode.sendKeys(zipCode);
         return this;
     }
